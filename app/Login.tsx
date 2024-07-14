@@ -58,8 +58,8 @@ const Login: FC<LoginProps> = ({ onLogin }) => {
       console.log(response);
       await setDoc(doc(FIREBASE_DB, "users", userId), {
         id: userId,
-        email: email, // Store the email here
-        completedTasks: 0, // You can initialize other fields as needed
+        email: email,
+        completedTasks: 0,
         lastCompletedDate: null,
       });
       router.push("/tabs/Homepage");

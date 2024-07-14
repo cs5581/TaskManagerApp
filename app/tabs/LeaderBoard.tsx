@@ -8,7 +8,7 @@ interface User {
   id: string;
   name: string;
   completedTasks: number;
-  lastCompletedDate?: Date; // This will help with filtering
+  lastCompletedDate?: Date;
 }
 
 const LeaderBoard = () => {
@@ -97,24 +97,6 @@ const LeaderBoard = () => {
         return true;
     }
   };
-
-  // const filterAndSortUsers = () => {
-  //   const now = new Date();
-  //   const filteredUsers = users.filter((user) => {
-  //     const completedDate = new Date(user.lastCompletedDate);
-  //     if (timePeriod === "daily") {
-  //       return completedDate >= new Date(now.setHours(0, 0, 0, 0));
-  //     } else if (timePeriod === "weekly") {
-  //       return completedDate >= new Date(now.setDate(now.getDate() - 7));
-  //     } else if (timePeriod === "monthly") {
-  //       return completedDate >= new Date(now.setMonth(now.getMonth() - 1));
-  //     }
-  //     return true; // Fallback
-  //   });
-
-  // Sort by completed tasks
-  //   return filteredUsers.sort((a, b) => b.completedTasks - a.completedTasks);
-  // };
 
   const renderUser = ({ item }: { item: User }) => (
     <View style={styles.userRow}>
