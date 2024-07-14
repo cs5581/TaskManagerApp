@@ -26,7 +26,7 @@ Simple React Native App that features users to be able to sign up/login and add/
 ## Installation
 1. Clone the Repository
    ```bash
-   git clone https://github.com/cs5581/TaskManagerApp
+   git clone https://github.com/cs5581/TaskManagerApp.git
    ```
 
 1. Install dependencies
